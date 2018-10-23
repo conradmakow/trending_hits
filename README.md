@@ -1,10 +1,10 @@
-#API Endpoints
+## API Endpoints
 
 `users`
 
 - `POST /api/users` - for signing up new users
 
-###post-MVP:
+Post-MVP:
 - `GET /api/users/:id` - returns the user page, for looking at user's comments, history
 
 `session`
@@ -17,7 +17,7 @@
 - `POST /api/songs` - add new song to database
 - `GET /api/songs` - get new trending songs? pass parameter?
 
-###post-MVP:
+Post-MVP:
 - `GET /api/songs/:id` - gets specific song by id
 
 `comments`
@@ -25,12 +25,12 @@
 - `POST /api/songs/:id/comments` - add a comment to a song
 - `DELETE /api/songs/:id/comments/:comment_id` - delete comment from song
 
-###post-MVP:
+Post-MVP:
 - `PATCH /api/songs/:id/comments/:comment_id` - edit comment
 
-#Database Schema
+## Database Schema
 
-##Users
+### Users
 
 | Column Name     | Data Type | Details                   |
 |-----------------|-----------|---------------------------|
@@ -41,7 +41,7 @@
 | created_at      | datetime  | not null                  |
 | updated_at      | datetime  | not null                  |
 
-##Songs
+### Songs
 
 | Column Name | Data Type | Details               |
 |-------------|-----------|-----------------------|
@@ -53,7 +53,7 @@
 | created_at  | datetime  | not null              |
 | updated_at  | datetime  | not null              |
 
-##Artists
+### Artists
 
 | Column Name | Data Type | Details               |
 |-------------|-----------|-----------------------|
@@ -64,7 +64,7 @@
 | created_at  | datetime  | not null              |
 | updated_at  | datetime  | not null              |
 
-##Song Comments
+### Song Comments
 
 | Column Name | Data Type | Details               |
 |-------------|-----------|-----------------------|
