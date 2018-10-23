@@ -2,8 +2,10 @@
 
 `users`
 
-- `GET /api/users/:id` - returns the user page, for looking at user's comments, history
 - `POST /api/users` - for signing up new users
+
+###post-MVP:
+- `GET /api/users/:id` - returns the user page, for looking at user's comments, history
 
 `session`
 
@@ -13,12 +15,17 @@
 `songs`
 
 - `POST /api/songs` - add new song to database
+- `GET /api/songs` - get new trending songs? pass parameter?
+
+###post-MVP:
 - `GET /api/songs/:id` - gets specific song by id
 
 `comments`
 
 - `POST /api/songs/:id/comments` - add a comment to a song
 - `DELETE /api/songs/:id/comments/:comment_id` - delete comment from song
+
+###post-MVP:
 - `PATCH /api/songs/:id/comments/:comment_id` - edit comment
 
 #Database Schema
